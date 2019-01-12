@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+
+body {
+  margin: 0 auto;
+  width: 60%;
+}
+
+header {
+  margin-top: 5%;
+  /* text-align: center; */
+  width: 100%;
+}
+
+header > nav {
+  display: inline-block;
+}
+
+header h1 {
+  font-family: "Roboto Slab";
+  font-size: 2rem;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* get link to underline on hover */
+header a:hover {
+  color: tomato;
+}
+
+#nav-left {
+  margin-right: 10%;
+}
+
+#nav-right a {
+  margin-left: 4rem;
+}
+
+p {
+  font-family: "Crimson Text";
+  font-size: 1.25rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
