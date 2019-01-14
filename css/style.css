@@ -1,50 +1,112 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300");
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
 body {
   margin: 0 auto;
-  width: 60%;
+  min-width: 800px;
+  width: 55vw;
 }
 
 header {
   margin-top: 5%;
-  /* text-align: center; */
   width: 100%;
 }
 
-header > nav {
+nav {
   display: inline-block;
 }
 
-header h1 {
-  font-family: "Roboto Slab";
-  font-size: 2rem;
-}
-
 header a {
+  position: relative;
   color: #000;
   text-decoration: none;
 }
 
-/* get link to underline on hover */
+header a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 header a:hover {
-  color: tomato;
+  color: #000;
+}
+
+header a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #nav-left {
-  margin-right: 10%;
+  margin-right: 11%;
 }
 
-#nav-right a {
-  margin-left: 4rem;
+.home-link > h1 {
+  font-family: 'Roboto Slab';
+  font-size: 2rem;
+}
+
+#nav-right {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.nav-links > h1 {
+  display: inline-block;
+  font-family: 'Crimson Text';
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  margin-left: 2.5rem;
+}
+
+#content {
+  width: 100%;
+}
+
+#content .photo {
+  display: inline-block;
+  width: 45%;
+}
+
+img {
+  border-radius: 5px;
+  height: auto;
+  width: 95%;
+}
+
+#content .info {
+  display: inline-block;
+  margin: 0;
+  padding-left: 1%;
+  vertical-align: top;
+  width: 50%;
 }
 
 p {
-  font-family: "Crimson Text";
+  font-family: 'Crimson Text';
   font-size: 1.25rem;
 }
 
+#first-para {
+  margin-top: 2em;
+}
+
 footer {
-  background-color: #000;
-  color: #fff;
+  color: #d3d3d3;
+  font-size: 0.1rem;
+  margin: 0;
+  text-align: center;
 }
