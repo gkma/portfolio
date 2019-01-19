@@ -124,8 +124,14 @@ footer {
     margin: 5px;
   }
 
+  #nav-right {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+
   .nav-links {
-    margin-left: 25px;
+    margin: 0;
   }
 
   .nav-links > h1 {
@@ -144,8 +150,12 @@ footer {
   }
 
   #content .info {
-    margin: 0 10px;
+    margin: 0 5%;
     text-align: justify;
     width: 90%;
+  }
+
+  #first-para {
+    margin-top: 1em;
   }
 }
